@@ -1,7 +1,7 @@
 <div ng-controller="myController" layout="row">
 
 	<div ng-show="!addNovaTarefa">
-		<md-sidenav style="padding-top:40px; height: 100%; width: 300px; position: fixed;" layout="column" class="md-sidenav-left md-whiteframe-z2" md-component-id="left" md-is-locked-open="$mdMedia('gt-sm')">
+		<md-sidenav style="padding-top:85px; height: 100%; width: 300px; position: fixed;" layout="column" class="md-sidenav-left md-whiteframe-z2" md-component-id="left" md-is-locked-open="$mdMedia('gt-sm')">
 
 			<div class="list-group" ng-show="apresentarListaDeTarefas">
 			  <h4 type="text" class="list-group-item list-group-item-info">
@@ -36,7 +36,7 @@
 
 		</md-sidenav>
 
-		<div style="padding-left: 300px; padding-top:50px;" layout="column" class="container" id="content" ng-show="arrayListaDeTarefas.length !== 0">
+		<div style="padding-left: 300px; padding-top:85px;" layout="column" class="container" id="content" ng-show="arrayListaDeTarefas.length !== 0">
 			<md-content layout="column" class="md-padding">
 				<h1>{{listaDeTarefasAtual.nome}}</h1>	
 
@@ -84,7 +84,7 @@
 			</md-content>
 		</div>
 
-		<md-sidenav style="padding-top:50px; height: 100%; width: 300px; position: fixed;" class="md-sidenav-right md-whiteframe-4dp" md-component-id="taskInfo">
+		<md-sidenav style="padding-top:85px; height: 100%; width: 300px; position: fixed;" class="md-sidenav-right md-whiteframe-4dp" md-component-id="taskInfo">
 			
 			<div class="list-group">
 				<li class="list-group-item list-group-item-action"><span class="glyphicon glyphicon-file"></span> <b>Nome: </b>{{tarefaSelecionada.nome}}</li>
@@ -111,7 +111,7 @@
 
 	</div>
 
-	<div class="container" ng-if="addNovaTarefa" style="padding-top:70px;">
+	<div class="container" ng-if="addNovaTarefa" style="padding-top:85px;">
 
 		<md-content class="md-no-momentum">
 			    
